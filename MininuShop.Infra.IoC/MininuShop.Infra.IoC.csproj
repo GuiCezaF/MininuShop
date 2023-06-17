@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MininuShop.Application\MininuShop.Application.csproj" />
+    <ProjectReference Include="..\MininuShop.Domain\MininuShop.Domain.csproj" />
+    <ProjectReference Include="..\MininuShop.Infra.Data\MininuShop.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>
