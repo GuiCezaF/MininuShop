@@ -1,6 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using MininuShop.Infra.Data.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"),
+    b => b.MigrationsAssembly("MininuShop.Api")));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
