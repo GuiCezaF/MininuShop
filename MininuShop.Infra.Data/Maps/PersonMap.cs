@@ -8,7 +8,9 @@ namespace MininuShop.Infra.Data.Maps
     {
         public void Configure(EntityTypeBuilder<Person> builder)
         {
-            builder.HasMany(c => c.Purchases).WithOne(p => p.Person).HasForeignKey(c => c.PersonId);
+            builder.HasMany(c => c.Purchases)
+                .WithOne(p => p.Person)
+                .HasForeignKey(c => c.PersonId);
         }
     }
 }
