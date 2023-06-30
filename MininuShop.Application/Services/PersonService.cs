@@ -2,6 +2,7 @@
 using MininuShop.Domain;
 using MininuShop.Domain.Entities;
 
+
 namespace MininuShop.Application
 {
 
@@ -34,6 +35,13 @@ namespace MininuShop.Application
 
       return ResultService.Ok<PersonDTO>(_mapper.Map<PersonDTO>(data));
     }
+
+    public async Task<ResultService<ICollection<PersonDTO>>> GetAsync()
+    {
+      var people = await _personRepository.GetPeopleAsync();
+      return ResultService.Ok<ICollection<PersonDTO>>(_mapper.Map<ICollection<PersonDTO>>(people));
+    }
   }
+
 
 }
