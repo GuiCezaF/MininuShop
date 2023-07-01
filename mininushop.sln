@@ -3,20 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MininuShop.Api", "MininuShop.Api\MininuShop.Api.csproj", "{007CE136-93A5-43B9-9C3A-2EC9C6A0C453}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MininuShop.Api", "MininuShop.Api\MininuShop.Api.csproj", "{007CE136-93A5-43B9-9C3A-2EC9C6A0C453}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MininuShop.Domain", "MininuShop.Domain\MininuShop.Domain.csproj", "{E4249BFA-A3D2-4744-A5FB-9AE8250C6C9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MininuShop.Domain", "MininuShop.Domain\MininuShop.Domain.csproj", "{E4249BFA-A3D2-4744-A5FB-9AE8250C6C9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MininuShop.Application", "MininuShop.Application\MininuShop.Application.csproj", "{3DED3DAE-CCA6-4E6B-8CDD-EA4855D64047}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MininuShop.Application", "MininuShop.Application\MininuShop.Application.csproj", "{3DED3DAE-CCA6-4E6B-8CDD-EA4855D64047}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MininuShop.Infra.IoC", "MininuShop.Infra.IoC\MininuShop.Infra.IoC.csproj", "{AC6873B0-DC6C-42C3-8B0E-D6AF41495FDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MininuShop.Infra.IoC", "MininuShop.Infra.IoC\MininuShop.Infra.IoC.csproj", "{AC6873B0-DC6C-42C3-8B0E-D6AF41495FDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MininuShop.Infra.Data", "MininuShop.Infra.Data\MininuShop.Infra.Data.csproj", "{D98AB522-7EDA-4AEF-B31E-896951ECBAE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MininuShop.Infra.Data", "MininuShop.Infra.Data\MininuShop.Infra.Data.csproj", "{D98AB522-7EDA-4AEF-B31E-896951ECBAE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MininuShop.Tests", "MininuShop.Tests\MininuShop.Tests.csproj", "{0EC95FB5-E94C-4328-9089-8B65FE178263}"
 EndProject
 Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
@@ -86,5 +85,23 @@ Global
 		{D98AB522-7EDA-4AEF-B31E-896951ECBAE6}.Release|x64.Build.0 = Release|Any CPU
 		{D98AB522-7EDA-4AEF-B31E-896951ECBAE6}.Release|x86.ActiveCfg = Release|Any CPU
 		{D98AB522-7EDA-4AEF-B31E-896951ECBAE6}.Release|x86.Build.0 = Release|Any CPU
+		{0EC95FB5-E94C-4328-9089-8B65FE178263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC95FB5-E94C-4328-9089-8B65FE178263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC95FB5-E94C-4328-9089-8B65FE178263}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0EC95FB5-E94C-4328-9089-8B65FE178263}.Debug|x64.Build.0 = Debug|Any CPU
+		{0EC95FB5-E94C-4328-9089-8B65FE178263}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0EC95FB5-E94C-4328-9089-8B65FE178263}.Debug|x86.Build.0 = Debug|Any CPU
+		{0EC95FB5-E94C-4328-9089-8B65FE178263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC95FB5-E94C-4328-9089-8B65FE178263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC95FB5-E94C-4328-9089-8B65FE178263}.Release|x64.ActiveCfg = Release|Any CPU
+		{0EC95FB5-E94C-4328-9089-8B65FE178263}.Release|x64.Build.0 = Release|Any CPU
+		{0EC95FB5-E94C-4328-9089-8B65FE178263}.Release|x86.ActiveCfg = Release|Any CPU
+		{0EC95FB5-E94C-4328-9089-8B65FE178263}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75C151F2-64D7-4081-A6AD-83C5052D8553}
 	EndGlobalSection
 EndGlobal
