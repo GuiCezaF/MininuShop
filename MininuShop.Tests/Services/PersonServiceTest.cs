@@ -30,7 +30,8 @@ namespace MininuShop.Tests.Services
             };
 
             var result = _personService.CreateAsync(person);
-            Assert.Equal(1, result.Id);
+
+            Assert.NotNull(result.Result.Data);
         }
     }
-}
+} 
